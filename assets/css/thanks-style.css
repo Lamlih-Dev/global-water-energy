@@ -1,0 +1,12 @@
+main{
+    margin-block: 10vh;
+}
+img{
+    width: 150px;
+}
+.thank-you{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

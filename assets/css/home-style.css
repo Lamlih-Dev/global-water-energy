@@ -1,0 +1,138 @@
+main{
+    position: relative;
+    height:75vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    background: url(/assets/images/main-background.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+main::before{
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 40%;
+}
+main > .content{
+    z-index: 100;
+    color: white;
+}
+main > .content > h1{
+    font-weight: 700;
+}
+main > .content > a{
+    display: inline-block;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin-top: 10px;
+}
+
+#products{
+    margin-block: 8vh;
+}
+#products h1{
+    font-size: 2em;
+    font-weight: 800;
+}
+#products a{
+    text-decoration: none;
+}
+#products .card{
+    position:relative;
+    margin-block: 5vh;
+    height: 250px;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    padding: 10px;
+    cursor: pointer;
+}
+#products .card > h3.info{
+    position:absolute;
+    color: white;
+    font-weight: 800;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 1em;
+    background-color: black;
+    margin: 0;
+    padding: 10px;
+    opacity: 0;
+}
+#products .card:hover > h3.info{
+    opacity: 1;
+}
+#products .card > h2{
+    color: white;
+    font-weight: 800;
+    font-size: 1.2em;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 80%);
+    border-radius: 50px;
+    padding: 5px 20px;
+}
+#products .card.silice{
+    background-image: url(/assets/images/silice.jpg);
+}
+#products .card.quartz{
+    background-image: url(/assets/images/quartz.jpeg);
+}
+#products .card.argile{
+    background-image: url(/assets/images/argile.jpg);
+}
+#products .card.bentonit{
+    background-image: url(/assets/images/bentonit.jpg);
+}
+#products .card:hover > h2{
+    opacity: 0;
+}
+
+.quote-devider{
+    position: relative;
+    background-image: url(/assets/images/quote-background.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.quote-devider::before{
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 20%;
+}
+.quote-devider h1{
+    color: white;
+    font-weight: 800;
+    font-size: 2.2em;
+    padding-block: 3vh; 
+}
+#contact{
+    padding-block: 5vh;
+}
+#contact .content{
+    padding-inline: 20px;
+    padding-block: 5vh;
+    border-radius: 10px;
+}
+#contact .content p{
+    font-size: 15px;
+    text-align: justify;
+}

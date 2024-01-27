@@ -1,0 +1,22 @@
+main{
+    margin-block: 5vh;
+}
+main img{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+main .quartz-images img{
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width:767px) {
+    .quartz-images .col-md-12{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    main .quartz-images img{
+        width: 50%;
+    }
+}
